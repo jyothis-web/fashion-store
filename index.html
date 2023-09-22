@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Store Demo</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-baner">
+        <div class="header-section">
+          <!-- <div class="full-nav">
+            <div class="nav-top">
+              <p style="letter-spacing: 0.3mm; flex-grow: 0.7">
+                <i
+                  class="fa-regular fa-paper-plane"
+                  style="margin-right: 10px"
+                ></i
+                ><span style="font-weight: bold"> 7 days a week </span> from
+                9:00 am to 7:00 pm
+              </p>
+              <p><i class="fa-solid fa-phone"></i> Contact</p>
+              <p><i class="fa-solid fa-user"></i> Log In</p>
+            </div>
+            <div class="navbarr">
+              <div class="fashion">
+                <img src="images/logo_100xwhite.png" alt="" style=" padding-left: 30px;"/>
+              </div>
+
+              <div class="inner-navbar">
+                <div class="navright">
+                  <div class="all-shops"><h6>All Products</h6></div>
+                  <div><h6>Hats</h6></div>
+                  <div><h6>Pages</h6></div>
+                  <div><h6>Clothes</h6></div>
+                </div>
+                <div class="navleft">
+                  <div>
+                    <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
+                  </div>
+                  <div>
+                    <h6><i class="fa-solid fa-user"></i></h6>
+                  </div>
+                  <div class="nav-cart">
+                    <h6 style="font-weight: bold">
+                      cart: 0 items
+                      <i
+                        class="fa-solid fa-cart-shopping"
+                        style="margin-right: 0 !important"
+                      ></i>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="navbarr2">
+            <div class="fashion">
+              <img src="images/fashion.webp" alt="" />
+            </div>
+            <div class="inner-navbar">
+              <div class="navright">
+                <div class="all-shops"><h6>All Products</h6></div>
+                <div><h6>Hats</h6></div>
+                <div><h6>Pages</h6></div>
+                <div><h6>Clothes</h6></div>
+              </div>
+              <div class="navleft">
+                <div>
+                  <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
+                </div>
+                <div>
+                  <h6><i class="fa-solid fa-user"></i></h6>
+                </div>
+                <div class="nav-cart">
+                  <h6>
+                    cart: 0 items
+                    <i
+                      class="fa-solid fa-cart-shopping"
+                      style="margin-right: 0 !important"
+                    ></i>
+                  </h6>
+                </div>
+                <div class="mobile-cart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="mobile-menu">
+                  <i
+                    class="fa-solid fa-bars"
+                    style="
+                      border-radius: 50%;
+                      font-size: 25px;
+                      background: transparent;
+                      color: #3e4f46;
+                      margin-right: -15px;
+                    "
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <i class="fa-solid fa-x" id="close"></i>
+            <h6>Shop all</h6>
+            <h6>Blog</h6>
+            <h6>About us</h6>
+            <h6>FAQS</h6>
+            <h6>Contact us</h6>
+          </div>
+
+          <div class="banner">
+            <h1>The Fashionista Dairies</h1>
+            <p class="banner-p">
+              <!-- Step into a world where fabric and design seamlessly intertwine,
+              where colors and textures dance in perfect harmony, and where
+              every stitch tells a captivating story. -->
+              Welcome to the realm of fashion, a mesmerizing symphony of
+              creativity, individuality, and timeless beauty.
+            </p>
+            <button class="round-btn">
+              <span> Go to categories </span>
+              <i class="fa-solid fa-globe"></i>
+            </button>
+            <button class="round-btn">
+              <span> Go to bestsellers now </span>
+              <i class="fa-solid fa-arrow-right-from-et"></i>
+            </button>
+            <div>
+              <div class="banner-flex-icon">
+                <div><i class="fa-solid fa-truck-ramp-box"></i></div>
+                <div class="banner-icon-text">
+                  <p><span>14-days</span> <br />return guarantee</p>
+                </div>
+                <div class="banner-flex-icon" id="bannericon-1">
+                  <div>
+                    <i
+                      class="fa-solid fa-snowflake"
+                      style="margin-left: 50px"
+                    ></i>
+                  </div>
+                  <div class="banner-icon-text">
+                    <p><span>Get 35% off</span> <br />for first order</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="banner-flex-icon"
+                id="bannericon-2"
+                style="display: flex"
+              >
+                <div>
+                  <i class="fa-solid fa-snowflake"></i>
+                </div>
+                <div class="banner-icon-text">
+                  <p><span>Get 35% off</span> <br />for first order</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section1>
+      <div class="sec1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+              <div class="card">
+                <div class="sec1-img1" style="position: relative">
+                  <img src="images/best-1.avif" alt="" />
+                  <div class="text-position1">
+                    <p>Categories</p>
+                    <h5>Bestseller</h5>
+                    <button class="round-btn" style="background-color: white">
+                      <span> Go to categories </span>
+                      <i class="fa-solid fa-globe"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+              <div class="card">
+                <div class="sec1-img2" style="position: relative">
+                  <img src="images/best-2.avif" alt="" />
+                  <div class="text-position2">
+                    <p>Categories</p>
+                    <h5>Clothes</h5>
+                    <button class="round-btn">
+                      <span> Go to categories </span>
+                      <i class="fa-solid fa-globe"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+              <div class="card">
+                <div class="sec1-img1" style="position: relative">
+                  <img src="images/best-3.avif" alt="" />
+                  <div class="text-position1">
+                    <p>Categories</p>
+                    <h5>Dresses</h5>
+                    <button class="round-btn" style="background-color: white">
+                      <span> Go to categories </span>
+                      <i class="fa-solid fa-globe"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+              <div class="card">
+                <div class="sec1-img2" style="position: relative">
+                  <img src="images/best-4.avif" alt="" />
+                  <div class="text-position2">
+                    <p>Categories</p>
+                    <h5>Shoes</h5>
+                    <button class="round-btn">
+                      <span> Go to categories </span>
+                      <i class="fa-solid fa-globe"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section1>
+
+    <section2>
+      <!-- <div class="sec2">
+        <i
+          class="fa-solid fa-circle-arrow-left"
+          id="arrow"
+          style="left: 55px"
+        ></i>
+        <div class="fashion-1"><img src="images/fashion.webp" alt=""/></div>
+        <img src="images/fashion.webp" alt=""  />
+        <img src="images/fashion.webp" alt="" />
+        <img src="images/fashion.webp" alt="" />
+        <img src="images/fashion.webp" alt="" />
+        <i
+          class="fa-solid fa-circle-arrow-right"
+          id="arrow"
+          style="right: 55px"
+        ></i>
+      </div> -->
+      <swiper-container
+        class="mySwiper"
+        loop="true"
+        navigation=""
+        true
+        space-between="30"
+        autoplay-delay="2500"
+        speed="1000"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide
+          ><div class="sec-2">
+            <img src="images/fashion.webp" alt="" />
+            <img src="images/fashion.webp" alt="" class="img1" />
+            <img src="images/fashion.webp" alt="" class="img1" />
+            <img src="images/fashion.webp" alt="" class="img2" />
+            <img src="images/fashion.webp" alt="" class="img2" /></div
+        ></swiper-slide>
+        <swiper-slide
+          ><div class="sec-2">
+            <img src="images/fashion.webp" alt="" />
+            <img src="images/fashion.webp" alt="" class="img1" />
+            <img src="images/fashion.webp" alt="" class="img1" />
+            <img src="images/fashion.webp" alt="" class="img2" />
+            <img src="images/fashion.webp" alt="" class="img2" /></div
+        ></swiper-slide>
+
+        <!-- If we need navigation buttons  -->
+
+        <!-- <div class="swiper-button-prev" style="padding: 30px; background: #000;"></div>
+  <div class="swiper-button-next"></div> -->
+
+        <div class="autoplay-progress" slot="container-end">
+          <span></span>
+        </div>
+      </swiper-container>
+    </section2>
+
+    <section3>
+      <div class="container">
+        <div class="sec3-head">
+          <h2>Bestseller Products</h2>
+          <button class="round-btn">
+            <span> Go To Products </span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+        </div>
+      </div>
+      <swiper-container
+        class="mySwiper"
+        loop="true"
+        navigation=""
+        true
+        space-between="30"
+        autoplay-delay="2500"
+        speed="1000"
+        autoplay-disable-on-interaction="false"
+      >
+    
+        <swiper-slide>
+          <div class="sec3">
+            <div
+              class="card"
+              id="c1"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-left"
+                id="arrow"
+                style="bottom: 210px; left: -4px"
+              ></i> -->
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Cotton Hat</h6>
+              <img src="images/child hat.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c2"
+              style="height: fit-content; position: relative"
+            >
+              <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Annie sn...</h6>
+              <img src="images/shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">
+                  63.00 <span>$</span
+                  ><span
+                    style="
+                      text-decoration: line-through;
+                      font-size: 12px;
+                      margin-left: 4px;
+                    "
+                    >65.00$</span
+                  >
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Black
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">black</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">white</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c3"
+              style="height: fit-content; position: relative"
+            >
+              <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Baby Girls Bodyco...</h6>
+              <img src="images/baby girl dress.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">63.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    red
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">red</a></li>
+                    <li><a class="dropdown-item" href="#">yellow</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c4"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-right"
+                id="arrow"
+                style="bottom: 210px; right: -4px"
+              ></i> -->
+              <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>women's sunshine</h6>
+              <img src="images/women shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">60.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    muave
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">muave</a></li>
+                    <li><a class="dropdown-item" href="#">teal</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div></div
+        ></swiper-slide>
+
+        <swiper-slide>
+          <div class="sec3">
+            <div
+              class="card"
+              id="c1"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-left"
+                id="arrow"
+                style="bottom: 210px; left: -4px"
+              ></i> -->
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Cotton Hat</h6>
+              <img src="images/d3.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c2"
+              style="height: fit-content; position: relative"
+            >
+              <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Annie sn...</h6>
+              <img src="images/yellowsirt.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">
+                  63.00 <span>$</span
+                  ><span
+                    style="
+                      text-decoration: line-through;
+                      font-size: 12px;
+                      margin-left: 4px;
+                    "
+                    >65.00$</span
+                  >
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Black
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">black</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">white</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c3"
+              style="height: fit-content; position: relative"
+            >
+              <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Baby Girls Bodyco...</h6>
+              <img src="images/d2.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">63.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    red
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">red</a></li>
+                    <li><a class="dropdown-item" href="#">yellow</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c4"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-right"
+                id="arrow"
+                style="bottom: 210px; right: -4px"
+              ></i> -->
+              <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>women's sunshine</h6>
+              <img src="images/d1.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">60.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    muave
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">muave</a></li>
+                    <li><a class="dropdown-item" href="#">teal</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div></div
+        ></swiper-slide>
+        
+        <swiper-slide>
+          <div class="sec3">
+            <div
+              class="card"
+              id="c1"
+              style="height: fit-content; position: relative"
+            >
+              <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Annie sn...</h6>
+              <img src="images/shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">
+                  63.00 <span>$</span
+                  ><span
+                    style="
+                      text-decoration: line-through;
+                      font-size: 12px;
+                      margin-left: 4px;
+                    "
+                    >65.00$</span
+                  >
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Black
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">black</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">white</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c2"
+              style="height: fit-content; position: relative"
+            >
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Cotton Hat</h6>
+              <img src="images/h1.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c3"
+              style="height: fit-content; position: relative"
+            >
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Cotton Hat</h6>
+              <img src="images/child hat.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c4"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-right"
+                id="arrow"
+                style="bottom: 210px; right: -4px"
+              ></i> -->
+              <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>women's sunshine</h6>
+              <img src="images/women shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">60.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    muave
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">muave</a></li>
+                    <li><a class="dropdown-item" href="#">teal</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div></div
+        ></swiper-slide>
+
+        <div class="autoplay-progress" slot="container-end">
+          <span></span>
+        </div>
+      </swiper-container>
+    </section3>
+    <section4>
+      <div class="sec4">
+        <h2 style="color: #3e4f46; padding-left: 50px">Best Categories</h2>
+        <div class="sec4-card">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+                <div class="card">
+                  <img src="images/n1.avif" alt="" style="position: relative" />
+                  <div
+                    class="text-position1"
+                    style="position: absolute; top: 100px"
+                  >
+                    <p>Categories</p>
+                    <h5>Eyeglasses</h5>
+                    <button class="round-btn">
+                      <span> Go to category </span>
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+                <div class="card">
+                  <img src="images/n2.avif" alt="" />
+                  <div
+                    class="text-position1"
+                    style="position: absolute; top: 100px"
+                  >
+                    <p>Categories</p>
+                    <h5>Sunglasses</h5>
+                    <button class="round-btn">
+                      <span> Go to category</span>
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+                <div class="card">
+                  <img src="images/n3.avif" alt="" />
+                  <div
+                    class="text-position1"
+                    style="position: absolute; top: 100px"
+                  >
+                    <p>Categories</p>
+                    <h5>Bluelights</h5>
+                    <button class="round-btn">
+                      <span> Go to category </span>
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 custom-card">
+                <div class="card">
+                  <img src="images/n4.avif" alt="" />
+                  <div
+                    class="text-position1"
+                    style="position: absolute; top: 100px"
+                  >
+                    <p>Categories</p>
+                    <h5>Shoes</h5>
+                    <button class="round-btn">
+                      <span> Go to category </span>
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section4>
+
+    <section5>
+      <div class="sec5">
+        <h3 style="padding-left: 10px; padding-bottom: 10px">
+          KIDS Fashion Fiesta
+        </h3>
+        <div class="sec5-card">
+          <div class="sec5-custom-card" style="position: relative; z-index: 12">
+            <img src="images/two-col-1.webp" alt="" class="col2-img" />
+            <div class="col2img-text1">
+              <h5>categories</h5>
+              <h4 style="padding-bottom: 15px">
+                Dresses that make you look trending
+              </h4>
+              <p>
+                Fashion is a form of self-expression and autonomy at a
+                particular period and place and in a specific context, of
+                clothing, footwear, lifestyle, accessories, makeup, hairstyle,
+                and body posture.
+              </p>
+            </div>
+          </div>
+
+          <div class="sec5-custom-card" id="sec5-show">
+            <div class="card" style="margin-left: 80px;">
+              <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Baby Girls Bodyco...</h6>
+              <img src="images/green1.webp " alt="" />
+              <div class="card-body">
+                <p class="card-text">63.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    red
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">red</a></li>
+                    <li><a class="dropdown-item" href="#">yellow</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add TO Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sec5-custom-card" id="sec5-hide">
+            <div class="card" style="margin-left: 80px">
+              <!-- <i
+                class="fa-solid fa-circle-arrow-right"
+                id="arrow"
+                style="bottom: 210px; right: -4px"
+              ></i> -->
+              <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Baby Girls Bodyco...</h6>
+              <img src="images/meroon 1.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">63.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    red
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">red</a></li>
+                    <li><a class="dropdown-item" href="#">yellow</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add TO Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section5>
+
+    <section6>
+      <div class="sec6">
+        <div class="card">
+          <div class="sec6-img">
+            <img src="images/banner-2.webp" alt="" />
+          </div>
+          <div class="sec6-text">
+            <h3 style="padding-bottom: 10px">
+              Trending Collection For Fashion
+            </h3>
+            <p style="padding-bottom: 10px">
+              Fashion is a form of self-expression and autonomy at a particular
+              period and place and in a specific context, of clothing, footwear,
+              lifestyle, accessories, makeup, hairstyle, and body posture.
+            </p>
+            <button class="round-btn" style="background-color: white">
+              <span> Go to categories </span>
+              <i class="fa-solid fa-globe"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section6>
+    <section7>
+      <div class="container">
+        <div class="sec3-head">
+          <h2>Trending Shoes For Girls</h2>
+          <button class="round-btn" id="sec3-hide">
+            <span> Go To categories </span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+        </div>
+        <button class="round-btn" id="sec3-show">
+          <span> Go To categories </span>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+      </div>
+      <swiper-container
+        class="mySwiper"
+        loop="true"
+        navigation=""
+        true
+        space-between="30"
+        autoplay-delay="2500"
+        speed="1000"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide>
+          <div class="sec3">
+            <div
+              class="card"
+              id="c1"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-left"
+                id="arrow"
+                style="bottom: 210px; left: -4px"
+              ></i> -->
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Elasto</h6>
+              <img src="images/shoe1.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c2"
+              style="height: fit-content; position: relative"
+            >
+              <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Annie sn...</h6>
+              <img src="images/shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">
+                  63.00 <span>$</span
+                  ><span
+                    style="
+                      text-decoration: line-through;
+                      font-size: 12px;
+                      margin-left: 4px;
+                    "
+                    >65.00$</span
+                  >
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Black
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">black</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">white</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c3"
+              style="height: fit-content; position: relative"
+            >
+              <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Melody</h6>
+              <img src="images/s1.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">63.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    red
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">red</a></li>
+                    <li><a class="dropdown-item" href="#">yellow</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c4"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-right"
+                id="arrow"
+                style="bottom: 210px; right: -4px"
+              ></i> -->
+              <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>women's sunshine</h6>
+              <img src="images/women shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">60.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    muave
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">muave</a></li>
+                    <li><a class="dropdown-item" href="#">teal</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div></div
+        ></swiper-slide>
+        <swiper-slide>
+          <div class="sec3">
+            <div
+              class="card"
+              id="c1"
+              style="height: fit-content; position: relative"
+            >
+              <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Annie sn...</h6>
+              <img src="images/s2.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">
+                  63.00 <span>$</span
+                  ><span
+                    style="
+                      text-decoration: line-through;
+                      font-size: 12px;
+                      margin-left: 4px;
+                    "
+                    >65.00$</span
+                  >
+                </p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Black
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">black</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">white</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c2"
+              style="height: fit-content; position: relative"
+            >
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Womens Masdy</h6>
+              <img src="images/s1.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c3"
+              style="height: fit-content; position: relative"
+            >
+              <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>Cotton Hat</h6>
+              <img src="images/women shoe.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">61.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    green
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">green</a></li>
+                    <li><a class="dropdown-item" href="#">blue</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              id="c4"
+              style="height: fit-content; position: relative"
+            >
+              <!-- <i
+                class="fa-solid fa-circle-arrow-right"
+                id="arrow"
+                style="bottom: 210px; right: -4px"
+              ></i> -->
+              <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+              <h6>women's sunshine</h6>
+              <img src="images/tshirt.webp" alt="" />
+              <div class="card-body">
+                <p class="card-text">60.00<span>$</span></p>
+                <div class="dropdown">
+                  <button
+                    class="btn rounded-pill dropdown-toggle"
+                    style="border: 0.7px solid black; width: 180px"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    muave
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#">muave</a></li>
+                    <li><a class="dropdown-item" href="#">teal</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">purple</a>
+                    </li>
+                  </ul>
+                </div>
+                <button class="round-btn">
+                  <span> Add To Cart</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div></div
+        ></swiper-slide>
+
+        <div class="autoplay-progress" slot="container-end">
+          <span></span>
+        </div>
+      </swiper-container>
+    </section7>
+    <section8>
+      <div class="sec8">
+        <div class="card">
+          <img src="images/custom-banner.webp" alt="" />
+          <div class="sec8-text">
+            <p>categories</p>
+            <h2
+              style="line-height: 0.9; padding-bottom: 15px; max-width: 480px"
+            >
+              Love Your Looks <span>By Our Products</span>
+            </h2>
+            <p style="padding-bottom: 10px">
+              The term implies a look defined by the fashion industry as that
+              which is trending. Everything that is considered fashion is
+              available and popularized by the fashion system
+            </p>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Email Adddress"
+              />
+
+              <button type="submit" class="input-group-text btn">
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section8>
+
+    <section9>
+      <div class="sec9" style="background-color: #3e4f46; z-index: 3">
+        <div class="sec5">
+          <h3 style="padding-left: 10px; padding-bottom: 10px"></h3>
+          <div class="sec5-card">
+            <div
+              class="sec5-custom-card"
+              id="sec9-card"
+              style="position: relative; z-index: 12"
+            >
+              <div
+                class="col2img-text1"
+                style="color: #ffecd8; width: fit-content; margin-bottom: 10px"
+              >
+                <h5 style="padding-bottom: 50px">categories</h5>
+                <h4 style="padding-bottom: 15px">Get new look to your Style</h4>
+                <p>
+                  No matter what your style is, there is a fashion trend out
+                  there for you. So experiment with different looks and find
+                  what makes you feel confident and stylish.
+                </p>
+                <button
+                  class="round-btn"
+                  style="color: black; background-color: #ffecd8"
+                >
+                  <span> Go To categories </span>
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="sec5-custom-card">
+              <div class="sec9-customcard" >
+                <div class="card" id="sec5-show" style="margin-left: 80px">
+                  <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Baby Girls Bodyco...</h6>
+                  <img src="images/h1.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">63.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        red
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">red</a></li>
+                        <li><a class="dropdown-item" href="#">yellow</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add TO Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sec5-custom-card" id="sec5-hide">
+              <div class="card" style="margin-left:80px">
+                <!-- <i
+                  class="fa-solid fa-circle-arrow-right"
+                  id="arrow"
+                  style="bottom: 210px; right: -4px"
+                ></i> -->
+                <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+                <h6>Baby Girls Bodyco...</h6>
+                <img src="images/h2.webp" alt="" />
+                <div class="card-body">
+                  <p class="card-text">63.00<span>$</span></p>
+                  <div class="dropdown">
+                    <button
+                      class="btn rounded-pill dropdown-toggle"
+                      style="border: 0.7px solid black; width: 180px"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      red
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">red</a></li>
+                      <li><a class="dropdown-item" href="#">yellow</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">purple</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="round-btn">
+                    <span> Add TO Cart</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec9-body">
+          <div class="container">
+            <div class="sec3-head">
+              <h4 style="padding-left: 30px; padding-top: 50px; color: #ffecd8">
+                Top Rated Products
+              </h4>
+            </div>
+          </div>
+          <swiper-container
+            class="mySwiper"
+            loop="true"
+            navigation=""
+            true
+            space-between="30"
+            autoplay-delay="2500"
+            speed="1000"
+            autoplay-disable-on-interaction="false"
+          >
+            <swiper-slide>
+              <div class="sec3">
+                <div
+                  class="card"
+                  id="c1"
+                  style="height: fit-content; position: relative"
+                >
+                  <!-- <i
+                    class="fa-solid fa-circle-arrow-left"
+                    id="arrow"
+                    style="bottom: 210px; left: -4px"
+                  ></i> -->
+                  <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Cotton Hat</h6>
+                  <img src="images/yellowsirt.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">61.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        green
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">green</a></li>
+                        <li><a class="dropdown-item" href="#">blue</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  id="c2"
+                  style="height: fit-content; position: relative"
+                >
+                  <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Womens Annie sn...</h6>
+                  <img src="images/h3.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      63.00 <span>$</span
+                      ><span
+                        style="
+                          text-decoration: line-through;
+                          font-size: 12px;
+                          margin-left: 4px;
+                        "
+                        >65.00$</span
+                      >
+                    </p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Black
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">black</a></li>
+                        <li><a class="dropdown-item" href="#">blue</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">white</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  id="c3"
+                  style="height: fit-content; position: relative"
+                >
+                  <p>OMLI<i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Baby Girls Bodyco...</h6>
+                  <img src="images/baby girl dress.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">63.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        red
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">red</a></li>
+                        <li><a class="dropdown-item" href="#">yellow</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  id="c4"
+                  style="height: fit-content; position: relative"
+                >
+                  <!-- <i
+                    class="fa-solid fa-circle-arrow-right"
+                    id="arrow"
+                    style="bottom: 210px; right: -4px"
+                  ></i> -->
+                  <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>women's sunshine</h6>
+                  <img src="images/shirt.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">60.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        muave
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">muave</a></li>
+                        <li><a class="dropdown-item" href="#">teal</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div></div
+            ></swiper-slide>
+            <swiper-slide>
+              <div class="sec3">
+                <div
+                  class="card"
+                  id="c1"
+                  style="height: fit-content; position: relative"
+                >
+                  <p>CAMPUS <i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Womens Annie sn...</h6>
+                  <img src="images/d3.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">
+                      63.00 <span>$</span
+                      ><span
+                        style="
+                          text-decoration: line-through;
+                          font-size: 12px;
+                          margin-left: 4px;
+                        "
+                        >65.00$</span
+                      >
+                    </p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Black
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">black</a></li>
+                        <li><a class="dropdown-item" href="#">blue</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">white</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  id="c2"
+                  style="height: fit-content; position: relative"
+                >
+                  <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Cotton Hat</h6>
+                  <img src="images/child hat.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">61.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        green
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">green</a></li>
+                        <li><a class="dropdown-item" href="#">blue</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  id="c3"
+                  style="height: fit-content; position: relative"
+                >
+                  <p>GOORIN <i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>Cotton Hat</h6>
+                  <img src="images/d2.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">61.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        green
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">green</a></li>
+                        <li><a class="dropdown-item" href="#">blue</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="card"
+                  id="c4"
+                  style="height: fit-content; position: relative"
+                >
+                  <!-- <i
+                    class="fa-solid fa-circle-arrow-right"
+                    id="arrow"
+                    style="bottom: 210px; right: -4px"
+                  ></i> -->
+                  <p>CAMPUS<i class="fa-solid fa-heart" id="heart"></i></p>
+                  <h6>women's sunshine</h6>
+                  <img src="images/women shoe.webp" alt="" />
+                  <div class="card-body">
+                    <p class="card-text">60.00<span>$</span></p>
+                    <div class="dropdown">
+                      <button
+                        class="btn rounded-pill dropdown-toggle"
+                        style="border: 0.7px solid black; width: 180px"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        muave
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">muave</a></li>
+                        <li><a class="dropdown-item" href="#">teal</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">purple</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="round-btn">
+                      <span> Add To Cart</span>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div></div
+            ></swiper-slide>
+
+            <div class="autoplay-progress" slot="container-end">
+              <span></span>
+            </div>
+          </swiper-container>
+        </div>
+      </div>
+    </section9>
+
+    <section10>
+      <div class="sec10">
+        <h4 style="padding: 30px 60px">Testimonials</h4>
+        <div class="sec10-grid">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/best-hat.avif" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h5 class="card-title">Fantastic</h5>
+                  <p class="card-text">
+                    We had several questions and minor issues that we werent
+                    aware of how to fix it. Contacted support and they were
+                    super quick.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Jhon Doe</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/best4-churidar.avif" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h5 class="card-title">Excellent</h5>
+                  <p class="card-text">
+                    Great theme with LOTS of options and GREAT support. Their
+                    support is awesome. Great communication and service!.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Mathew</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" id="sec10-3rdcard" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="images/best3jacket.avif" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h5 class="card-title">Delighted</h5>
+                  <p class="card-text">
+                    The customer support is absolutely amazing. Every time I
+                    submitted an question, Bigsteps was able to provide an
+                    answer very fast.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary">Alwin</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section10>
+    <section11>
+      <div class="sec11">
+        <div class="container">
+          <div class="sec3-head">
+            <h4>Our Featured Blog Posts</h4>
+            <button class="round-btn">
+              <span>Read More</span>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
+          </div>
+        </div>
+        <swiper-container
+          class="mySwiper"
+          loop="true"
+          navigation=""
+          true
+          space-between="30"
+          autoplay-delay="2500"
+          speed="1000"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide>
+            <div class="sec11-card">
+              <div class="card" id="b1">
+                <img src="images/z1.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6 style="font-size: 20px">Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card" id="b2">
+                <img src="images/z2.webp" ; class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card" id="b3">
+                <img src="images/z4.webp" ; class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card" id="b4">
+                <img src="images/z3.webp" ; class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+            </div></swiper-slide
+          >
+          <swiper-slide>
+            <div class="sec11-card">
+              <div class="card" id="b1">
+                <img src="images/z5.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card" id="b2">
+                <img src="images/z3.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+              <div class="card" id="b3">
+                <img src="images/z1.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card" id="b4">
+                <img src="images/z3.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h6>Favorite style pick ou..</h6>
+                  <p class="card-text">
+                    Unlock the secrets of effortless Parisian style with our
+                    blog's guide to French fashion, featuring iconic looks and
+                    tips for achieving that coveted...
+                  </p>
+                  <button class="round-btn">
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </div>
+            </div></swiper-slide
+          >
+
+          <div class="autoplay-progress" slot="container-end">
+            <span></span>
+          </div>
+        </swiper-container>
+
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card" id="a1">
+              
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card" id="a2">
+              
+
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card" id="a3">
+              
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 custom-card" id="a4">
+              
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section11>
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="footer-top">
+            <img
+              src="images/fashion.webp"
+              alt=""
+              style="padding-bottom: 28px"
+            />
+            <p style="width: fit-content">
+              No matter what your style is, there is a fashion trend out there
+              for you. So experiment with different looks and find what makes
+              you feel confident and stylish.
+            </p>
+            <div class="footer-logo">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              <div><i class="fa-brands fa-instagram"></i></div>
+              <div><i class="fa-brands fa-youtube"></i></div>
+              <div><i class="fa-brands fa-twitter"></i></div>
+            </div>
+          </div>
+
+          <div class="col-md-4" id="footer-sec">
+            <h5>NAVIGATION:</h5>
+            <p>Search</p>
+            <p>Shipppping policy</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact us</p>
+          </div>
+          <div class="col-md-4" id="footer-sec">
+            <h5>About us:</h5>
+            <p>About us</p>
+            <p>Contact us</p>
+            <p>Blog Page</p>
+            <p>Article page</p>
+            <p>faq's</p>
+            <p>collection page</p>
+          </div>
+          <div class="col-md-4" id="footer-sec">
+            <h5>Navigation</h5>
+            <p>Bestseller</p>
+            <p>Clothes</p>
+            <p>Dresses</p>
+            <p>Hats</p>
+            <p>Shoes</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      //   $(document).ready(function(){
+      //     $(window).on('scroll',function(){
+      //         if ($(window).scrollTop()) {
+      //             $(".full-nav").hide();
+      //             $(".navbarr2").show();
+      //         }else{
+      //           $(".navbarr2").hide();
+      //           $(".full-nav").show();
+
+      //         }
+
+      //     });
+      // });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".mobile-menu").click(function () {
+          $(".sidebar").show(500);
+        });
+      });
+
+      $(document).ready(function () {
+        $("#close").click(function () {
+          $(".sidebar").hide(500);
+        });
+      });
+    </script>
+    <!-- <script>
+   
+      
+    </script> -->
+  </body>
+</html>
